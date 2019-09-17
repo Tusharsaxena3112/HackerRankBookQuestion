@@ -15,4 +15,11 @@ public class Books {
         return name;
     }
 
+    public String toString() {
+        return "-----------------------------" + "\n"
+                + "Book Name:\t" + name + "\n" + "Author Name:\t" + author + "\n" + "ISBN:\t" + number + "\n" + "-----------------------------";
+    }
+
+
+
 }
