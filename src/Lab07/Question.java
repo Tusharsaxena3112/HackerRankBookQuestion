@@ -12,7 +12,8 @@ public class Question {
             String company = input.next();
             String age = input.next();
             User user = new User(name, company, age);
-            arr[i] = user.toString();
+            //arr[i] = user.toString();
+            arr[i] = user.createPassword();
         }
         for (int i = 0; i < Integer.parseInt(number); i++) {
             System.out.println(arr[i]);
