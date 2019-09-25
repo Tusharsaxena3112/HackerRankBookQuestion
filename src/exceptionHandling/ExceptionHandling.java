@@ -5,12 +5,12 @@ public class ExceptionHandling {
         try {
             // Random input = new Random()
             // int random=input.nextInt();
-            int[] array = new int[-5];//Here it can generate exception .
-            System.out.println("Array is successfully created");
+            int[] array = new int[10];//Here it can generate exception .
+            throw new IsInvalidArray("Invalid Array");
 
 
-        } catch (NegativeArraySizeException e) {
-            System.out.println("array size cannot be negative");
+        } catch (IsInvalidArray e) {
+            System.out.println("Exception:" + e.getMessage());
 
         }
     }
