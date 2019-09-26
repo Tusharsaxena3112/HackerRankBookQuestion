@@ -3,6 +3,8 @@ package multithreading;
 public class Test implements Runnable {
     @Override
     public void run() {
-        System.out.println("Thread test");
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Thread test");
+        }
     }
 }
