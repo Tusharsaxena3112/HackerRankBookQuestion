@@ -11,8 +11,8 @@ public class ExceptionHandling {
 
         } catch (IsInvalidArray e) {
             System.out.println("Exception:" + e.getMessage());
-
         }
+
     }
 
 }
