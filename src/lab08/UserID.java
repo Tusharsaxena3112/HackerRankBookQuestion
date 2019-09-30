@@ -10,7 +10,7 @@ package lab08;
 public class UserID {
     private String firstName;
     private String lastName;
-    private int pinCode;
+    private String pinCode;
     private String greater;
     private String smaller;
 
@@ -18,7 +18,7 @@ public class UserID {
     public UserID(String firstName, String lastName, int pinCode) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.pinCode = pinCode;
+        this.pinCode = Integer.toString(pinCode);
     }
 
     public String greater() {
@@ -44,12 +44,22 @@ public class UserID {
         return lastName;
     }
 
-//    public String firstTwoCharacters(){
-//
-//    }
+    public String firstTwoCharacters() {
+        return greater().substring(0, 2);
+    }
 
+
+    public String lastTwoCharacters() {
+        return smaller().substring(smaller().length() - 2, smaller().length());
+    }
+
+
+    public char pin1() {
+        return pinCode.charAt(greater().length());
+    }
 
     public String toString() {
-        return String.format("%s %s", greater(), smaller());
+        return String.format("%s%s", firstTwoCharacters(), lastTwoCharacters());
     }
+
 }
