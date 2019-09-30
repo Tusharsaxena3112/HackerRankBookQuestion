@@ -10,7 +10,7 @@ package lab08;
 public class UserID {
     private String firstName;
     private String lastName;
-    private String pinCode;
+    private String pinCode; //Pin code must be of 6 digits.
     private String greater;
     private String smaller;
 
