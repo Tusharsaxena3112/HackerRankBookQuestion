@@ -55,11 +55,22 @@ public class UserID {
 
 
     public char pin1() {
-        return pinCode.charAt(greater().length());
+        if (greater().length() < 6) {
+            return pinCode.charAt(greater().length() - 1);
+        }
+        return pinCode.charAt(5);
+    }
+
+    public char pin2() {
+        if (greater().length() < 6) {
+            return pinCode.charAt((pinCode.length() - 1) - (smaller().length() - 1));
+        }
+        return pinCode.charAt(0);
     }
 
     public String toString() {
-        return String.format("%s%s", firstTwoCharacters(), lastTwoCharacters());
+        return String.format("%s%s%c%c", firstTwoCharacters(), lastTwoCharacters(), pin1(), pin2());
     }
+
 
 }

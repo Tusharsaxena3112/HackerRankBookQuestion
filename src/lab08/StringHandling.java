@@ -1,8 +1,14 @@
 package lab08;
 
+import java.util.Scanner;
+
 public class StringHandling {
     public static void main(String[] args) {
-        UserID obj = new UserID("Saxena", "Tushar", 47893);
+        Scanner input = new Scanner(System.in);
+        String firstName = input.next().trim();
+        String lastName = input.next().trim();
+        int pinCode = input.nextInt();
+        UserID obj = new UserID(firstName, lastName, pinCode);
         System.out.println(obj);
     }
 }
