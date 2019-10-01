@@ -13,7 +13,9 @@ public class Question5 {
     }
 
     public void printReplace(String inputString, String subString, String replaceString) {
-        inputString.replaceAll(subString, replaceString);
+        inputString = inputString.replaceAll(subString, replaceString);
+        System.out.println(inputString);
+
     }
 
 }
