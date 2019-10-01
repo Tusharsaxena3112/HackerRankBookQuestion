@@ -15,6 +15,6 @@ public class Question3 {
                 inputString = inputString.replace(inputString.charAt(i), '*');
             }
         }
-        System.out.println(inputString);
+        System.out.println(inputString.toUpperCase());
     }
 }
