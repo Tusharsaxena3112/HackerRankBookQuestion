@@ -9,11 +9,14 @@ public class Question1 {
     }
 
     public void printString(String givenString) {
+        System.out.printf("index: ");
         for (int i = 0; i <= givenString.length() - 1; i++) {
-            System.out.printf("index:%d", i);
+            System.out.printf("%d ", i);
         }
+        System.out.println();
+        System.out.printf("chars: ");
         for (int i = 0; i <= givenString.length() - 1; i++) {
-            System.out.printf("Chars:%c", givenString.charAt(i));
+            System.out.printf("%c ", givenString.charAt(i));
         }
     }
 }
