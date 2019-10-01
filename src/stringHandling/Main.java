@@ -12,6 +12,7 @@ public class Main {
         //Question6 obj6=new Question6(input.nextLine());
         // Question7 obj7 = new Question7(input.nextLine());
         //Question8 obj8=new Question8(input.nextLine());
+        //Question9 obj9= new Question9(input.nextLine());
 
 
 
