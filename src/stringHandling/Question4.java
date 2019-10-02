@@ -12,16 +12,28 @@ public class Question4 {
 
     public Question4(String inputString) {
         this.inputString = inputString;
+        replaceVowel(inputString);
     }
 
     public void replaceVowel(String inputString) {
-        int c = 0;
-        inputString = inputString.toLowerCase();
-        for (int i = 0; i <= inputString.length() - 1; i++) {
-            if (inputString.charAt(i) == 'a' || inputString.charAt(i) == 'e' || inputString.charAt(i) == 'i' || inputString.charAt(i) == 'o' || inputString.charAt(i) == 'u' && c == 0) {
-                inputString = inputString.replace(inputString.charAt(i), '*');
-                c += 1;
+        String s1 = "";
+        String s2 = inputString.toLowerCase();
+        int vowelCounter = 0;
+        for (int i = 0; i <= s2.length() - 1; i++) {
+            if (s2.charAt(i) == 'a' || s2.charAt(i) == 'e' || s2.charAt(i) == 'i' || s2.charAt(i) == 'o' || s2.charAt(i) == 'u') {
+                vowelCounter += 1;
+                if (vowelCounter % 3 == 1) {
+                    s1 += "*";
+                } else if (vowelCounter % 3 == 2) {
+                    s1 += "^";
+                } else {
+                    s1 += "!";
+                }
+            } else {
+                s1 += inputString.charAt(i);
             }
         }
+        System.out.println(s1);
     }
+
 }
