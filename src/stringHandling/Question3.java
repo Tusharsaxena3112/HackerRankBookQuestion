@@ -1,5 +1,14 @@
 package stringHandling;
 
+//WAP to accept inputString from user and replace all the vowels by *, by using String replace(char oldChar, char newChar).
+//
+//  String s1 = "vaibhav";
+//  s1 = s1.replace('a','*');
+//  System.out.println(s1);
+//
+//  output:
+//  v*ibh*v
+
 public class Question3 {
     private String inputString;
 
