@@ -1,5 +1,7 @@
 package stringHandling;
 
+//WAP to print UpperWeight of given inputString. UpperWeight can be find by adding all the upper case characters of the inputString.
+
 public class Question8 {
     private String inputString;
 
