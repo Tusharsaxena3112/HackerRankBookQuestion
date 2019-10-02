@@ -1,5 +1,15 @@
 package stringHandling;
 
+//WAP to print all the index in newline of given character ch form the inputString.
+//
+// input:
+// char ch = 'a';
+// String inputString = "vaibhav";
+//
+// output:
+// 1
+// 5
+
 public class Question11 {
     private String inputString;
     private char a;
