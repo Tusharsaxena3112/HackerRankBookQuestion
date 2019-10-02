@@ -1,4 +1,5 @@
 package stringHandling;
+//WAP to print substring of a given inputString by using String substring(int index). Accept inputString and index from user.
 
 public class Question2 {
     private String inputString;
