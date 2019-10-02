@@ -1,5 +1,12 @@
 package stringHandling;
 
+//WAP to print AbsoluteWeight of given inputString. Absolute weigth can be calulated as:
+//
+//  absoluteWeight = UpperWeight - LowerWeight;
+//
+//  1. absoluteWeight will always be a positive value.
+//  2. LowerWeight can be find by adding all the lower case characters of the inputString.
+
 public class Question9 {
     private String inputString;
 
