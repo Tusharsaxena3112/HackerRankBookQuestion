@@ -1,6 +1,11 @@
 package stringHandling;
 
+//Modify the above program so that:
 //
+//first occurred vowel will be replaced by *.
+//Second occurred vowel will be replaced by ^.
+//Third occurred vowel will be replaced by !.
+//repeat the above process for all occurred vowels.
 
 public class Question4 {
     private String inputString;
