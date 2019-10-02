@@ -1,4 +1,15 @@
 package stringHandling;
+//WAP to print the totalWeight of given inputString.
+//
+//  totalWeight can be calculate by adding *ASCII* value of all the characters.
+//          for example:
+//          inputString = "Abc";
+//          totalWeight = 65 + 98 + 99;
+//
+//          where ASCII values:
+//              A --> 65
+//              b --> 98
+//              c --> 99
 
 public class Question7 {
     private String inputString;
