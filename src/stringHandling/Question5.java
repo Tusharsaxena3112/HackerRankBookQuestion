@@ -1,5 +1,7 @@
 package stringHandling;
 
+//WAP to replace all the occurrence of given subString from the inputString. --- (search library function for the task from the java docs by using the link [https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/String.html]).
+
 public class Question5 {
     private String inputString;
     private String subString;
