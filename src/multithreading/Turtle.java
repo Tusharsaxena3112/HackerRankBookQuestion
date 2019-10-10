@@ -19,5 +19,6 @@ public class Turtle extends Thread {
         } catch (InterruptedException e) {
             System.out.println("Interrupted");
         }
+        System.out.println(getName() + " has finished the race");
     }
 }
