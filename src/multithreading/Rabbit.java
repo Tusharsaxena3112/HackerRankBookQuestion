@@ -15,7 +15,7 @@ public class Rabbit extends Thread {
         }
         System.out.println(getName() + " Reached Mountain");
         try {
-            Thread.sleep(6000);
+            Thread.sleep(6000L);
         } catch (InterruptedException e) {
             System.out.println("Interrupted");
         }
