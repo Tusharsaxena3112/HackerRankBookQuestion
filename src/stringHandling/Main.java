@@ -1,11 +1,9 @@
 package stringHandling;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        Question1 obj1 = new Question1(input.nextLine());
+//        Scanner input = new Scanner(System.in);
+//        Question1 obj1 = new Question1(input.nextLine());
         //Question2 obj1=new Question2(input.nextLine(),input.nextInt());
         //Question3 obj3 = new Question3(input.nextLine());
         //Question4 obj4 = new Question4(input.nextLine());
@@ -16,6 +14,8 @@ public class Main {
         //Question9 obj9= new Question9(input.nextLine());
         //Question10 obj10 = new Question10(input.nextLine(), input.next().charAt(0));
         //Question11 obj11 = new Question11(input.nextLine(), input.next().charAt(0));
+        String str = "abc";
+        System.out.println(str.repeat(4));
 
 
 
