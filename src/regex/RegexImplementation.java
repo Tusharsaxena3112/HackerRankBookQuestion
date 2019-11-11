@@ -15,7 +15,7 @@ public class RegexImplementation {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the text");
         String string = scanner.nextLine();
-        Pattern pattern = Pattern.compile("^[a-z]+[a-zA-Z\\.-]+@[a-zA-Z\\.-]\\.com");
+        Pattern pattern = Pattern.compile("^[a-z]+[a-zA-Z\\.-]+@[a-zA-Z\\.-]+\\.com");
         Matcher matcher = pattern.matcher(string);
         System.out.println(matcher.matches());
 
