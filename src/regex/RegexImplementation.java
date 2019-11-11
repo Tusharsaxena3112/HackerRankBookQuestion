@@ -18,5 +18,6 @@ public class RegexImplementation {
         Pattern pattern = Pattern.compile("");
         Matcher matcher = pattern.matcher(string);
         System.out.println(matcher.matches());
+
     }
 }
