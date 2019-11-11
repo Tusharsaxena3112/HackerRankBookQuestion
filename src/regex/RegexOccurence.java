@@ -16,5 +16,8 @@ public class RegexOccurence {
             count++;
             System.out.println("Occurrence: " + count + " from " + matcher.start() + " to " + matcher.end());
         }
+
+        //Using group methods
+        String string1 = "This is the string text and is very helpful";
     }
 }
