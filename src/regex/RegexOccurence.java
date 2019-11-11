@@ -19,5 +19,12 @@ public class RegexOccurence {
 
         //Using group methods
         String string1 = "This is the string text and is very helpful";
+        Pattern pattern1 = Pattern.compile(".* (is)+.*");
+        Matcher matcher1 = pattern.matcher(string1);
+        System.out.println(matcher1.matches());
+        matcher1.reset();
+        while (matcher1.find()) {
+            System.out.println("Occurrence:" + matcher1.group(1));
+        }
     }
 }
